@@ -8,7 +8,7 @@ const usersRouter = require("./routes/users");
 
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 
 //connection zur DB
 db();
